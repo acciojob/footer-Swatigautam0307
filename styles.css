@@ -1,1 +1,71 @@
-/* your code here */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.media-icons {
+  display: flex;
+}
+
+.media-icons a {
+  color: white;
+  margin: 0 5px;
+}
+
+.media-icons i {
+  font-size: 25px;
+  padding: 5px;
+  background-color: rgb(225, 255, 0);
+  border-radius: 50%;
+}
+
+.link-boxes {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 50px;
+}
+
+.link-boxes .box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-boxes .box a {
+  text-decoration: none;
+  color: white;
+}
+
+.bottom-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: rgb(31, 29, 29);
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .top,
+  .link-boxes,
+  .bottom-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-boxes {
+    gap: 20px;
+  }
+}
